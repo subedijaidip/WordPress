@@ -1,0 +1,36 @@
+/* Kadence – Badge icon ONLY inside blog post content */
+.single-post .entry-content h2::before,
+.single-post .entry-content h3::before,
+.single-post .entry-content h4::before {
+    content: "🏠";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6366f1; /* Badge color */
+    color: #ffffff;
+    border-radius: 8px;
+    margin-right: 12px;
+    vertical-align: middle;
+    line-height: 1;
+}
+/* Heading sizes for specific headings. */
+/* H2 badge */
+.single-post .entry-content h2::before {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+}
+
+/* H3 badge */
+.single-post .entry-content h3::before {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+/* H4 badge */
+.single-post .entry-content h4::before {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+}
