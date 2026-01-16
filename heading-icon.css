@@ -1,0 +1,23 @@
+/* Kadence – subtle heading marker (posts only) */
+.single-post .entry-content h2,
+.single-post .entry-content h3,
+.single-post .entry-content h4 {
+    position: relative;
+    padding-left: 22px;
+}
+
+/* Vertical line */
+.single-post .entry-content h2::before,
+.single-post .entry-content h3::before,
+.single-post .entry-content h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background-color: var(--global-palette5);
+    border-radius: 2px;
+    opacity: 0.6;
+}
